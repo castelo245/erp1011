@@ -1,0 +1,9 @@
+{
+  "name": "erp",
+  "private": true,
+  "scripts": {
+    "setup": "npm --prefix apps/api install && npm --prefix apps/web install && npm --prefix apps/api run db:push && npm --prefix apps/api run seed",
+    "dev:api": "npm --prefix apps/api run dev",
+    "dev:web": "npm --prefix apps/web run dev"
+  }
+}
